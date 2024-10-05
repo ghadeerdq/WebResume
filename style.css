@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean, modern look */
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  /* Center items horizontally */
+    background-color: lightgray;   
+    border-radius: 10px; 
+    padding: 20px;
+    height: 400px; /* You can adjust the height */
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+.contact-info {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-info p, .contact-info a {
+    font-size: 16px;
+    color: #333;
+}
+
+h2 {
+    color: #0046c0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content p strong {
+    font-weight: bold;
+}
+
+.projects em {
+    color: rgb(82, 82, 82);
+}
+
+section {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+
+
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
